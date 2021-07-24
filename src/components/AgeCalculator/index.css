@@ -1,0 +1,236 @@
+.bg {
+  background-color: blue;
+  background-size: cover;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2)
+    forwards;
+}
+.bg2 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 25px;
+  border: 3px black solid;
+  cursor: pointer;
+}
+.input {
+  border-radius: 15px;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+.btn {
+  cursor: pointer;
+  width: 250px;
+  height: 85px;
+  background: white;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2)
+    forwards;
+
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  }
+  10% {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  }
+  20% {
+    background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+  }
+  30% {
+    background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+  }
+  40% {
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  }
+  50% {
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  }
+  60% {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  }
+  70% {
+    background: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%);
+  }
+  80% {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  }
+  90% {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  }
+  100% {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  }
+}
+.age-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #43cbff 0%, #9708cc 100%);
+  height: 100vh;
+}
+
+.age-calculator-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .age-calculator-card {
+    width: 70%;
+    padding: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .age-calculator-card {
+    width: 40%;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.input-with-error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding-top: 8px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input-field {
+    width: 320px;
+    padding-top: 14px;
+    padding-right: 24px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+  }
+}
+
+.error-message {
+  color: #ff0b37;
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .error-message {
+    width: 320px;
+  }
+}
+
+.calculated-age-text {
+  text-align: center;
+  color: #8e1dd2;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.calculate-button {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #43cbff 0%, #9708cc 100%);
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  width: 132px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 24px;
+  padding-top: 13px;
+  padding-right: 32px;
+  padding-bottom: 13px;
+  padding-left: 32px;
+  outline: none;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    margin-top: 32px;
+  }
+}
+
+.age-calculator-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .age-calculator-image {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .age-calculator-image {
+    width: 60%;
+  }
+}
